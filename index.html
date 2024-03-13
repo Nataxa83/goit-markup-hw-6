@@ -16,9 +16,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>WebStudio</title>
   </head>
+
   <body>
     <!-- navigation -->
     <header class="page-header">
@@ -48,13 +49,23 @@
             </li>
           </ul>
         </address>
+        <button class="menu-open-btn" type="button">
+          <svg
+            class="menu-open-btn-icon"
+            width="24"
+            height="24"
+            aria-label="mobile menu open icon"
+          >
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <!-- unique content -->
     <main>
       <!-- hero section -->
-      <section class="hero-section">
+      <!-- <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">
             effective solutions<br />
@@ -62,10 +73,10 @@
           </h1>
           <button type="button" class="button">Order Service</button>
         </div>
-      </section>
+      </section> -->
 
       <!-- features section -->
-      <section class="features section">
+      <!-- <section class="features section">
         <div class="container">
           <h2 class="visually-hidden">list</h2>
           <ul class="features-list">
@@ -139,10 +150,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- team section -->
-      <section class="team section">
+      <!-- <section class="team section">
         <div class="container">
           <h2 class="section-title">our team</h2>
           <ul class="team-list">
@@ -157,7 +168,6 @@
               <div class="team-info">
                 <h3 class="team-name">Mark Guerrero</h3>
                 <p class="team-job-title">Product Designer</p>
-                <!-- <div class="social-links"> -->
                 <ul class="social-links-menu">
                   <li class="social-links-list">
                     <a
@@ -224,8 +234,7 @@
                     </a>
                   </li>
                 </ul>
-                <!-- </div> -->
-              </div>
+                 </div>
             </li>
             <li class="team-list-item">
               <img
@@ -237,8 +246,7 @@
               />
               <div class="team-info">
                 <h3 class="team-name">Tom Ford</h3>
-                <p class="team-job-title">Frontend Developer</p>
-                <!-- <div class="social-links"> -->
+                <p class="team-job-title">Frontend Developer</p>              
                 <ul class="social-links-menu">
                   <li class="social-links-list">
                     <a
@@ -304,8 +312,7 @@
                       </svg>
                     </a>
                   </li>
-                </ul>
-                <!-- </div> -->
+                </ul>              
               </div>
             </li>
             <li class="team-list-item">
@@ -318,8 +325,7 @@
               />
               <div class="team-info">
                 <h3 class="team-name">Camila Garcia</h3>
-                <p class="team-job-title">Marketing</p>
-                <!-- <div class="social-links"> -->
+                <p class="team-job-title">Marketing</p>               
                 <ul class="social-links-menu">
                   <li class="social-links-list">
                     <a
@@ -385,8 +391,7 @@
                       </svg>
                     </a>
                   </li>
-                </ul>
-                <!-- </div> -->
+                </ul>               
               </div>
             </li>
             <li class="team-list-item">
@@ -399,8 +404,7 @@
               />
               <div class="team-info">
                 <h3 class="team-name">Daniel Wilson</h3>
-                <p class="team-job-title">UI Designer</p>
-                <!-- <div class="social-links"> -->
+                <p class="team-job-title">UI Designer</p>               
                 <ul class="social-links-menu">
                   <li class="social-links-list">
                     <a
@@ -466,16 +470,15 @@
                       </svg>
                     </a>
                   </li>
-                </ul>
-                <!-- </div> -->
+                </ul>                
               </div>
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- portfolio section -->
-      <section class="portfolio section" id="portfolio">
+      <!-- <section class="portfolio section" id="portfolio">
         <div class="container">
           <h2 class="section-title">our portfolio</h2>
           <ul class="portfolio-list">
@@ -601,11 +604,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- footer section-->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="footer-logo-list">
           <a class="footer-logo" href="./index.html"
@@ -707,11 +710,11 @@
             </button>
           </form>
         </div>
-      </div>
-    </footer>
+      </div> 
+    </footer> -->
 
     <!-- modal window -->
-    <div class="backdrop is-open">
+    <!-- <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg
@@ -806,6 +809,105 @@
           </div>
           <button class="order-form-submit-btn" type="submit">Send</button>
         </form>
+      </div>
+    </div> -->
+
+    <!-- mobile menu -->
+    <div class="mobile-menu is-open">
+      <div class="container mobile-menu-container">
+        <button class="mobile-menu-close-btn">
+          <svg
+            class="mobile-menu-close-icon"
+            width="8"
+            height="8"
+            aria-label="icon close"
+          >
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-nav-menu">
+          <l1>Studio</l1>
+          <l1>Portfolio</l1>
+          <l1>Contacts</l1>
+        </ul>
+        <ul class="mobile-contacts">
+          <li>
+            <a href="mailto:info@devstudio.com" class="link-contacts"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+110001111111" class="link-contacts"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+        <ul class="social-links-menu">
+          <li class="social-links-list">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="social-links-item"
+            >
+              <svg
+                class="social-links-icon"
+                width="16"
+                height="16"
+                aria-label="icon-instagram"
+              >
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links-list">
+            <a
+              href="https://www.twitter.com/"
+              class="social-links-item"
+              target="_blank"
+            >
+              <svg
+                class="social-links-icon"
+                width="16"
+                height="16"
+                aria-label="icon-twitter"
+              >
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links-list">
+            <a
+              href="https://www.facebook.com/"
+              class="social-links-item"
+              target="_blank"
+            >
+              <svg
+                class="social-links-icon"
+                width="16"
+                height="16"
+                aria-label="icon-facebook"
+              >
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-links-list">
+            <a
+              href="https://www.linkedin.com/"
+              class="social-links-item"
+              target="_blank"
+            >
+              <svg
+                class="social-links-icon"
+                width="16"
+                height="16"
+                aria-label="icon-linkedin"
+              >
+                <use href="./images/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
