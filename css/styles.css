@@ -49,10 +49,10 @@ img {
      overflow: hidden;
  }
 
- /* .section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-} */
+ .section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
 
 .section-title {
 
@@ -713,7 +713,79 @@ header {
         padding-left: 38px;
     }    
 }
-
-
-
 /* ========== /modal menu ========== */
+
+
+
+/* ========== fatures section ========== */
+.features-icons {
+    display: none;
+}
+
+.features-title {
+    color: #2E2F42;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    text-align: center;
+ }
+
+.features-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+@media only screen and (min-width: 768px) {
+    .features-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+
+    .features-list-item {
+         width: calc((100% - 24px) / 2);
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .features-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 112px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        border: 1px solid #8e8f99;
+        background: #f4f4fd;
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
+    .features-title {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    .features-text {
+        font-weight: 400;
+    }
+
+    .features-list {
+        gap: 24px;
+        flex-wrap: wrap;
+    }
+
+    .features-list-item {
+        width: calc((100% - 72px) / 4);
+    }
+}
+/* ========== /fatures section ========== */
